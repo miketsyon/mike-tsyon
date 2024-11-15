@@ -1,26 +1,16 @@
 {
-  "name": "nextra-on-fleek",
-  "version": "0.0.1",
-  "description": "Nextra docs template",
+  "name": "mike-tsyon",
+  "version": "1.0.0",
+  "description": "Mike Tsyon kicks Jake Paul Website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
-  },
-  "author": "Shu Ding <g@shud.in>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
-  },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "next": "^13.0.6",
-    "nextra": "latest",
-    "nextra-theme-docs": "latest",
+    "nextra": "^2.13.2",
+    "nextra-theme-docs": "^2.13.2",  
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
