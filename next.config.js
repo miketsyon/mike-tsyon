@@ -3,12 +3,17 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.tsx',
 })
 
+// Merge configurations
 const nextConfig = {
   output: 'export',
-  basePath: '/mike-tsyon',
+  basePath: process.env.NODE_ENV === 'production' ? '/mike-tsyon' : '',
   images: {
     unoptimized: true
-  }
+  },
+  distDir: 'dist'
 }
 
-module.exports = withNextra(nextConfig)
+// Export the merged config
+module.exports = withNextra({
+  ...nextConfig
+})
