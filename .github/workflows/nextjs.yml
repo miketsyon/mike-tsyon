@@ -4,13 +4,10 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write  # Updated from 'read' to 'write'
   pages: write
   id-token: write
 
@@ -25,4 +22,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Adjust this if your HTML files are in a subdirectory
+          publish_dir: ./  # Adjust if your HTML files are in a subdirectory
